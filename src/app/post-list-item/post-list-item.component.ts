@@ -16,4 +16,12 @@ export class PostListItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  getClass() {
+    if(this.postLikes > 0) {
+      return 'alert-success';
+    } else if(this.postLikes < 0) {
+      return 'alert-danger';
+    }
+  }
+
 }
