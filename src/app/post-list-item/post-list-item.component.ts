@@ -18,9 +18,9 @@ export class PostListItemComponent implements OnInit {
 
   getClass() {
     if(this.postLikes > 0) {
-      return 'alert-success';
+      return 'list-group-item-success';
     } else if(this.postLikes < 0) {
-      return 'alert-danger';
+      return 'list-group-item-danger';
     }
   }
 
